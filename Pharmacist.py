@@ -17,7 +17,7 @@ location = input("Please enter the address of your pharmacy: ")
 l = copy.copy(location)
 location = location.replace(' ','%20')
 location = location.replace('+','%2B')
-url = "https://geocode.maps.co/search?q={}&api_key=670d447275180331827086mwlb29f9b".format(location)
+url = "https://geocode.maps.co/search?q={}&api_key=<INSERT GEOCODE API KEY HERE>".format(location)
 response = requests.get(url)
 data = response.json()
 
